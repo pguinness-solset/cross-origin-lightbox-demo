@@ -1,0 +1,18 @@
+{
+  "name": "cross-origin-lightbox-demo",
+  "description": "",
+  "main": "lightbox.js",
+  "authors": [
+    "Patrick Guinness <patrick.guinness@epsilon.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

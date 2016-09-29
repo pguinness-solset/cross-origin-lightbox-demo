@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lightbox Content</title>
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	</head>
+	<body>
+		<div class="lightbox">
+			<div class="lightbox-close">
+				<a href="javascript:void(0);" id="lightbox-close">X</a>
+			</div>
+			<div class="lightbox-body">
+				<p>This is a lightbox in an iframe.</p>
+			</div>
+		</div>
+		<script>
+			document.getElementById('lightbox-close').addEventListener('click', function() {
+				console.log('click close');
+				window.parent.postMessage('close-lightbox', 'http://lightbox-demo.epsilon-dev.appspot.com');
+				// window.parent.postMessage('close-lightbox', '*');
+			});
+		</script>
+	</body>
+</html>
