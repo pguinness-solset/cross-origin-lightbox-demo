@@ -35,13 +35,11 @@
 		</div>
 
 
-		<script src="js/bundle.js"></script>
+		<script src="http://localhost:8080/js/bundle.js"></script>
 		<script>
 		var lightbox = new Lightbox();
 
-		var callToActionElement = document.getElementById("lightbox-trigger");
-
-    callToActionElement.addEventListener("click", function () {
+    document.getElementById("lightbox-trigger").addEventListener("click", function () {
     	lightbox.show();
     });
 		</script>

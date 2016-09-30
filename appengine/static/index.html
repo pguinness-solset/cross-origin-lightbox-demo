@@ -1,25 +1,45 @@
 <!DOCTYPE>
 <html>
 	<head>
-		<title>Cross-Origin Lightbox Demo</title>
-		<style type="text/css">
-		body {
-			background: #fff;
-		}
-		</style>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<title>Whole Foods Lightbox Demo</title>
 	</head>
 	<body>
-		<p>
-			<a id="lightbox-trigger" href="javascript:void(0);">Open lightbox</a>
-		</p>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Cross-Origin Lightbox Demo</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<p>
+					<a id="lightbox-trigger" class="btn btn-primary" href="javascript:void(0);">Open Lightbox</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</div>
+				<div class="col-md-4">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</div>
+				<div class="col-md-4">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</div>
+			</div>
+		</div>
+
 
 		<script src="http://localhost:8080/js/bundle.js"></script>
 		<script>
 		var lightbox = new Lightbox();
 
-		var callToActionElement = document.getElementById("lightbox-trigger");
-
-    callToActionElement.addEventListener("click", function () {
+    document.getElementById("lightbox-trigger").addEventListener("click", function () {
     	lightbox.show();
     });
 		</script>
